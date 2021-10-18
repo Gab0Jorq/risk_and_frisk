@@ -127,7 +127,7 @@ def plot_classification_report(y_true, y_hat):
 
 def binarizar(df, var_binarias):
     """
-    Binariza variables categóricas, que renorta N-1, columnas binarizadas por cada variable ingresada.
+    Binariza variables categóricas, que reporta N-1, columnas binarizadas por cada variable ingresada.
 
     parameters:
     -----------
