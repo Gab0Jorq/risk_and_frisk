@@ -1,12 +1,21 @@
-# 1. Preliminares
-Este dataset se creo en Nueva York, a través del programa stop and frisk, en el que realizaban detenciones e interrogaciones en la vía pública, este Dataset son muestras hechas en el año 2009.
+# 1. Contexto
+<!--
+Para ingresar una imagen
+![arresto por ciudad](imagenes/Arresto_por_ciudad.jpg "Arresto según controles por ciudad")
+-->
 
-El objetivo de este problema, es de **Clasificación**, y se dividen principalmente en 2, estos son:
-* Crear un modelo predictivo que nos diga la probabilidad de que una persona sea arrestada y a partir del modelo que mejor se desempeñe en esta tarea, ver cuales son los principales 5 atributos que nos llevan a concluir de esta manera.
-* Determinar un modelo predictivo que determine si el accionar policial concluirá en alguna acción violenta.
+Este dataset se creo en Nueva York, a través del programa stop and frisk, en el que realizaban detenciones e interrogaciones en la vía pública, este Dataset son muestras hechas en el año 2009 y 2010.
 
-Cómo implementar la solución: Para implementar una solución se necesitan hacer los siguientes pasos:
-* Análisis exploratorio: Para saber como se comportan los datos
+![Stop and Frisk](imagenes/stop_and_frisk.jpg 'Stop and Frisk')
+
+Este problema se divide en dos:
+* El primero es crear un modelo predictivo que nos diga la probabilidad de que una persona sea arrestada en una detención.
+* El segundo es crear un modelo predictivo que determine según las características de los detenidos, si el procedimiento será **violento** o no.
+
+# 2. Solución
+
+Para implementar una solución se necesitan hacer los siguientes pasos:
+* Análisis exploratorio: Para saber como se comportan los datos.
 * Limpieza de datos: Aqui tenemos mucho que hacer, hay 22 columnas con datos perdidos, teniendo 15 de ellas, con más de 3200 datos perdidos, por lo que lo más conveniente es eliminar estas columnas, ya que si les hacemos un dropna, peremos más del 50% de los datos.
 Además tenemos varias variables categóricas que debemos binarizar, ya que los algoritmos de ML, no las soportan, debemos tener todo numérico.
 * Modelado: Una vez tenemos todos los datos limpios, podemos comenzar a trabajar con modelos de ML que nos permitan hacer predicciones en este problema de clasificación.
